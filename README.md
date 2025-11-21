@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # uts_pemob2
 
 A new Flutter project.
@@ -14,3 +15,25 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+=======
+A. Jelaskan bagaimana state management dengan Cubit dapat membantu dalam 
+pengelolaan transaksi yang memiliki logika diskon dinamis.
+  jawaban:
+     1.State management dengan Cubit membantu mengelola transaksi diskon dengan cara menempatkan seluruh perhitungan logika diskon di satu tempat terpusat, bukan di dalam widget. Ketika ada perubahan seperti menambah barang, mengubah jumlah, atau memasukkan kode promo, Cubit akan menghitung ulang total harga, nilai diskon, dan harga akhir, lalu mengirim state baru ke UI. Dengan begitu tampilan hanya menampilkan hasil tanpa harus melakukan hitungan sendiri. Pendekatan ini membuat kode lebih rapi, mudah dirawat, mengurangi error, dan jika aturan diskon berubah, cukup memperbarui logika di Cubit tanpa perlu mengubah banyak bagian aplikasi.
+     2.Diskon per item adalah potongan harga yang diberikan langsung pada tiap menu secara individual, misalnya ayam Goreng mendapat diskon 10% sehingga harganya turun sebelum masuk ke total belanja. Sementara itu, diskon total adalah potongan yang diberikan setelah seluruh pesanan dijumlahkan, biasanya dengan syarat tertentu, seperti diskon 10% jika total belanja lebih dari Rp100.000. Jadi, diskon per item mempengaruhi harga masing-masing produk, sedangkan diskon total mempengaruhi keseluruhan transaksi.
+     3.Widget Stack digunakan pada tampilan kategori menu karena memberikan kebebasan untuk menempatkan elemen di posisi yang lebih fleksibel dan tidak terikat oleh susunan vertikal atau horizontal seperti pada Row atau Column. Dengan Stack, kategori seperti “Makanan” dan “Minuman” bisa diletakkan di area tertentu, misalnya melayang di bagian atas daftar menu, tanpa mengganggu tata letak konten utama. Hal ini membuat tampilan terlihat lebih rapi, modern, dan mudah diakses, sehingga pengguna dapat memilih kategori dengan cepat tanpa perlu menggulir halaman. Stack membantu menciptakan pengalaman penggunaan yang lebih intuitif dan nyaman.
+
+B.Penjelasan proyek 
+
+Aplikasi yang dibuat merupakan aplikasi kasir sederhana untuk RUMAH MAKAN SABIL, di mana pengguna dapat melihat daftar menu berdasarkan kategori seperti makanan dan minuman. Setiap menu memiliki harga asli dan harga setelah diskon, sehingga pengguna bisa langsung melihat potongan harga per item. Pengguna dapat menambahkan pesanan ke keranjang, mengubah jumlah item, menghapus pesanan, dan melihat total harga secara otomatis karena aplikasi menggunakan Cubit sebagai state management. icon keranjang juga menampilkan total transaksi, termasuk diskon tambahan 10% jika total belanja Rp.100.000. 
+
+
+
+
+c.Hasil run 
+<img width="253" height="568" alt="image" src="https://github.com/user-attachments/assets/0bc02987-9d7b-4075-8ddc-907caf862451" />
+<img width="269" height="569" alt="image" src="https://github.com/user-attachments/assets/ef27682a-8931-4756-ad13-e0efa6bece14" />
+<img width="253" height="573" alt="image" src="https://github.com/user-attachments/assets/48c2cc61-be5c-4e7e-b1b0-1d9d9298ca07" />
+
+
+>>>>>>> 3e2ba24953d74c8dea5620efbb8f7cd732a9f8ca
