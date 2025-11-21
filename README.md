@@ -9,6 +9,9 @@ B.Penjelasan proyek
 
 Aplikasi yang dibuat merupakan aplikasi kasir sederhana untuk RUMAH MAKAN SABIL, di mana pengguna dapat melihat daftar menu berdasarkan kategori seperti makanan dan minuman. Setiap menu memiliki harga asli dan harga setelah diskon, sehingga pengguna bisa langsung melihat potongan harga per item. Pengguna dapat menambahkan pesanan ke keranjang, mengubah jumlah item, menghapus pesanan, dan melihat total harga secara otomatis karena aplikasi menggunakan Cubit sebagai state management. icon keranjang juga menampilkan total transaksi, termasuk diskon tambahan 10% jika total belanja Rp.100.000. 
 
+
+
+
 c.Hasil run 
 <img width="253" height="568" alt="image" src="https://github.com/user-attachments/assets/0bc02987-9d7b-4075-8ddc-907caf862451" />
 <img width="269" height="569" alt="image" src="https://github.com/user-attachments/assets/ef27682a-8931-4756-ad13-e0efa6bece14" />
